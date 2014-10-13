@@ -15,7 +15,6 @@
   [class*="span"] {
     float: left;
     min-height: 1px;
-    margin: 0 30px 0 30px;
   }
   .container,
   .navbar-static-top .container,
