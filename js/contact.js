@@ -2,6 +2,7 @@
       $("#send").click(function(){
         var name   = $("#name").val();
         var email  = $("#email").val();
+        var subject = $("#subject").val();
         var message  = $("#message").val();
 
         var error = false;
@@ -32,7 +33,7 @@
            $.ajax({
              type: "POST",
              url : "send.php",    
-             data: "name=" + name + "&email=" + email + "&subject=" + "You Got Email" + "&message=" + message,
+             data: "name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message,
              success: function(data){    
               if(data == 'success'){
                 $("#btnsubmit").remove();

@@ -13,15 +13,15 @@ if(get_magic_quotes_gpc()) {
     $message = stripslashes($message);
 }
 
-$address = "benito.andrade@serviciosintegrales.com.mx";
+$address = "ventas@serviciosintegrales.com.mx";
 
 
 $is_subject = $subject;
 
 
-$is_body = "You have been contacted by $name with regards to $subject, their additional message is as follows. " . PHP_EOL . PHP_EOL;
+$is_body = "Usted ha sido contactado por $name con respecto a $subject, su mensaje es el siguiente.. " . PHP_EOL . PHP_EOL;
 $is_content = "\"$message\"" . PHP_EOL . PHP_EOL;
-$is_reply = "You can contact $name via email: $email";
+$is_reply = "Puedes contactar a $name via email: $email";
 
 $msg = wordwrap($is_body . $is_content . $is_reply, 70);
 
