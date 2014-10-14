@@ -1254,6 +1254,18 @@ header .info-text {
         color: #FFF;
     }
 
+/* Links Contpaq */
+
+    .contp li a:link {
+        text-decoration: none;
+        color: #888;
+    }
+
+    .contp li a:visited {
+        color: #888;
+    }
+
+
 /* overide bootstrap */
     a:visited {
     color: #278b5d;
