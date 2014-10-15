@@ -1256,14 +1256,24 @@ header .info-text {
 
 /* Links Contpaq */
 
-    .contp li a:link {
-        text-decoration: none;
-        color: #888;
-    }
+.contp li a:link {
+    text-decoration: none;
+    color: #888;
+}
 
-    .contp li a:visited {
-        color: #888;
-    }
+.contp li a:visited {
+    color: #888;
+}
+
+/* S. Lista Precio */
+.btn-precio:link {
+    text-decoration: none;
+    color: #888;
+}
+
+.btn-precio:visited {
+    color: #888;
+}
 
 
 /* overide bootstrap */
