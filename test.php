@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<?php
+echo '<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="utf-8">
@@ -37,7 +38,7 @@
       js = d.createElement(s); js.id = id;
       js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=1482683755341621&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, "script", "facebook-jssdk"));</script>
     <div id="wrapper">
 
         <header>
@@ -397,9 +398,9 @@
             </div>
         </footer>
     </div>
-    
     <script type="text/javascript">
-        document.oncontextmenu = function(){return false;}
-    </script>
+document.oncontextmenu = function(){return false;}
+</script>
 </body>
-</html>
+</html>';
+ ?>
