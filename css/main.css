@@ -6,3 +6,17 @@
 @import url("flexslider.css");
 @import url("style.css");
 @import url("switcher.css");
+
+#contpaq{
+	margin: 0 auto; 
+	text-align: center;
+	float: right;
+}
+#contpaq a img{
+	padding-right: 10px;
+	margin: 0 auto; 
+	text-align: center;
+	float: right;
+}
+
+.Article{
