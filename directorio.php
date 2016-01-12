@@ -115,7 +115,7 @@
                             <span style="display:block;text-align:center;"><img src="images/dir2.png" alt="" width="60%" /></span>
                             </div>
                             <h5>Benito Andrade</h5>
-                            <div class="directorio_desc">Desarrollo <br> <strong>Correo:</strong><br> benito.andrade@serviciosintegrales.com.mx <br> <strong>Tel:</strong><br>314) 138 4257 </div>
+                            <div class="directorio_desc">Desarrollo <br> <strong>Correo:</strong><br> benito.andrade@serviciosintegrales.com.mx <br> <strong>Tel:</strong><br>(314) 138 4257 </div>
                         </div>
 
                         <div class="directorio span4">
@@ -129,8 +129,22 @@
                             <div class="picframe">
                             <span style="display:block;text-align:center;"><img src="images/dir2.png" alt="" width="60%" /></span>
                             </div>
-                            <h5>Ignacio</h5>
-                            <div class="directorio_desc">Soporte Técnico <br> <strong>Correo:</strong><br> ignacio.xxxx@serviciosintegrales.com.mx</div>
+                            <h5>Ignacio Joya</h5>
+                            <div class="directorio_desc">Soporte Técnico <br> <strong>Correo:</strong><br>.com.mx</div>
+                        </div>
+                        <div class="directorio span4">
+                            <div class="picframe">
+                            <span style="display:block;text-align:center;"><img src="images/dir2.png" alt="" width="60%" /></span>
+                            </div>
+                            <h5>Julio López</h5>
+                            <div class="directorio_desc">Soporte Técnico <br> <strong>Correo:</strong><br>julio.lopez@serviciosintegrales.com.mx</div>
+                        </div>
+                        <div class="directorio span4">
+                            <div class="picframe">
+                            <span style="display:block;text-align:center;"><img src="images/dir1.png" alt="" width="60%" /></span>
+                            </div>
+                            <h5>Isela Robles</h5>
+                            <div class="directorio_desc">Área Administrativa<br><strong>Correo:</strong><br> administracion@serviciosintegrales.com.mx <br> <strong></strong><br></div>
                         </div>
                         <div class="span2"></div>
                         <div class="span2"></div>
