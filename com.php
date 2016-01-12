@@ -30,7 +30,7 @@
 <body>
     <div id="wrapper">
 
-        <header>
+                <header>
             <div class="container">
                 <div id="logo">
                     <div class="inner">
@@ -41,7 +41,7 @@
 
                 <ul id="mainmenu">
                     <li><a href="index.php" title="Inicio">Inicio</a></li>
-                    <li><a href="paquetes.php" title="paquetes">Paquetes</a>
+                    <li><a href="paquetes.php" title="Paquetes">Paquetes</a></li>
                         <ul>
                             <li><a href="contacto.php">Contactanos</a></li>
                             <li><a href="directorio.php">Directorio</a></li>
@@ -51,6 +51,7 @@
                         <ul>
                             <li><a href="contpaqi.php">CONTPAQ i</a></li>
                             <li><a href="casa.php">Sistema CASA</a></li>
+                            <li><a href="reco.php">Sistemas ROCO</a></li>
                         </ul>
                     </li>
                     <li><a href="#" title="Servicios">Servicios</a>

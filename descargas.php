@@ -42,7 +42,7 @@
 
                 <ul id="mainmenu">
                     <li><a href="index.php" title="Inicio">Inicio</a></li>
-                    <li><a href="paquetes.php" title="Paquetes">Paquetes</a>
+                    <li><a href="paquetes.php" title="Paquetes">Paquetes</a></li>
                         <ul>
                             <li><a href="contacto.php">Contactanos</a></li>
                             <li><a href="directorio.php">Directorio</a></li>
