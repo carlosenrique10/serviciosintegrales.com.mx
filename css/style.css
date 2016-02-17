@@ -435,7 +435,7 @@ footer {
 
 /* Boton Arriba */
 
-#toTop {
+#toTop{
     z-index: 1555;
     display: none;
     text-decoration: none;
