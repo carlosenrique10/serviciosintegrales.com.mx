@@ -23,8 +23,50 @@
     <script src="rs-plugin/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/custom.js"></script>
-
     <script src="js/rev-setting-1.js"></script>
+
+    <script src="js/jquery.js"></script>
+  <script src="js/jquery.smooth-scroll.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      $('div.casa').smoothScroll();
+
+      $('a').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+          scrollTarget: link.hash
+        });
+      });
+
+      $('#change-speed').on('click', function() {
+        var $p1 = $('contpaqi').first(),
+            p1Opts = $p1.smoothScroll('options') || {};
+
+        p1Opts.speed = p1Opts.speed === 1400 ? 400 : 1400;
+        $p1.smoothScroll('options', p1Opts);
+      });
+
+      $('button.scrollsomething').click(function() {
+        $.smoothScroll({
+          scrollElement: $('div.scrollme'),
+          scrollTarget: '#findme'
+        });
+        return false;
+      });
+      $('button.scrollhorz').click(function() {
+        $.smoothScroll({
+          direction: 'left',
+          scrollElement: $('div.scrollme'),
+          scrollTarget: '.horiz'
+        });
+        return false;
+      });
+
+    });
+
+  </script>
     
 </head>
 
@@ -52,7 +94,7 @@
                         <ul>
                             <li><a href="contpaqi.php">CONTPAQ i</a></li>
                             <li><a href="casa.hmtl">Sistema CASA</a></li>
-                            <li><a href="reco.php">Sistemas ROCO</a></li>
+                            <li><a href="reco.php">Sistemas RECO</a></li>
                         </ul>
                     </li>
                     <li><a href="#" title="Servicios">Servicios</a>
@@ -103,7 +145,19 @@
                 </div>
             </div>
             <!-- ================================== -->
-            <div id="content">
+            <div id="contpaqi" class="casa container col-md-4 col-md-pull-4">
+                <div class="content">
+                <a class="col-md-1" href="#csaawin"><img width="15%" src="images/csaaiwin.png" style="width:10%;height:10%;float: rigth;" alt=""></a>
+                <a class="col-md-1" href="#ctrawin"><img width="15%" src="images/ctrawin.png" style="width:10%;height:10%;" alt=""></a>
+                <a class="col-md-1" href="#cvalwin"><img width="15%" src="images/cvalwin.png" style="width:10%;height:10%;" alt=""></a>
+                <a class="col-md-1" href="#ccgwin"><img width="15%" src="images/ccgwin.png" style="width:10%;height:10%;" alt=""></a>
+                <a class="col-md-1" href="#ccajwin"><img width="15%" src="images/ccajwin.png" style="width:10%;height:10%;" alt=""></a>
+                <a class="col-md-1" href="#ctarwin"><img width="15%" src="images/ctarwin.png" style="width:10%;height:10%;" alt=""></a>
+                </div>
+             </div>
+            <!-- ================================== -->
+            <div id="csaawin">
+            <div  id="content">
                 <div class="container">
                     <div class="row">
                         <div class="de_divider none"><span></span></div>
@@ -116,7 +170,7 @@
                             </div>
                             <div>
                                 <p>
-                                    <img src="images/csaaiwin.png" alt="" class="img-left">
+                                    <a href="#content"><img src="images/csaaiwin.png" alt="" class="img-left"></a>
                                     Permite la elaboración, validación y pago electrónico de pedimentos en todos los regímenes aduaneros vigentes, dando cumplimiento a la legislación aduanera en vigor y realizar el procesamiento de la información de sus embarques y de las mercancías cubriendo hasta con el más mínimo requerimiento del archivo de transmisión que se compone de un número variable de registros.<br><br>
                                     Genera todo tipo de pedimentos de forma fácil y rápida, con el mayor número de validaciones técnicas y normativas que representen a la agencia aduanal seguridad y eliminación de errores u omisiones.<br><br>
                                     <strong>Caracteristicas:</strong><br>
@@ -139,7 +193,9 @@
                     </div>
                 </div>
             </div>
+            </div>
             <!-- ================================== -->
+            <div id="ctrawin">
             <div id="content">
                 <div class="container">
                     <div class="row">
@@ -153,7 +209,7 @@
                             </div>
                             <div>
                                 <p>
-                                    <img src="images/ctrawin.png" alt="" class="img-left">
+                                    <a href="#content"><img src="images/ctrawin.png" alt="" class="img-left"></a>
                                     Le proporciona el medio de automatización integral de las funciones en las áreas operativas de su empresa. El sistema consolida la información de clientes, proveedores, avisos de embarque, recolección de guías, asignación de referencias, registro de tramitación, control de solicitud y recepción de anticipos; recuperando y enviando información a los sistemas de Pedimentos y de Facturación y cobranza.<br><br>
                                     El controlar cada una de las etapas del despacho aduanero mediante la integración de sistemas asegura la obtención de información oportuna, relevante y útil para una eficiente toma de decisiones.<br>
                                     Lleva el seguimiento y control del embarque desde su registro hasta la entrega de las mercancías al cliente.<br>
@@ -181,7 +237,9 @@
                     </div>
                 </div>
             </div>
+        </div>
             <!-- ================================== -->
+            <div id="cvalwin">
             <div id="content">
                 <div class="container">
                     <div class="row">
@@ -195,7 +253,7 @@
                             </div>
                             <div>
                                 <p>
-                                    <img src="images/cvalwin.png" alt="" class="img-left">
+                                    <a href="#content"><img src="images/cvalwin.png" alt="" class="img-left"></a>
                                     Es una poderosa y eficiente herramienta de apoyo a través de la cual obtendrá la solución más funcional a la obligación de contar con la Manifestación de Valor en Aduana de las Mercancías y las Hojas de Cálculo correspondientes. <br><br>
                                     Este producto esta dirigido a usted que es Agente Aduanal y desea ofrecer un valor agregado a la comunidad importadora del País. <br>
                                     Le ofrece la oportunidad de modernizar los procesos para el registro y control de mercancías, y así atender las necesidades de apertura comercial y globalización de los mercados. <br>
@@ -221,7 +279,9 @@
                     </div>
                 </div>
             </div>
+        </div>
             <!-- ================================== -->
+            <div id="ccgwin">
             <div id="content">
                 <div class="container">
                     <div class="row">
@@ -235,7 +295,7 @@
                             </div>
                             <div>
                                 <p>
-                                    <img src="images/ccgwin.png" alt="" class="img-left">
+                                    <a href="#content"><img src="images/ccgwin.png" alt="" class="img-left"></a>
                                     Es la mejor opción para automatizar la elaboración, el seguimiento y el control de las Cuentas de Gastos, ofrece un medio eficiente en el control de la cobranza, mediante la obtención oportuna de reportes de facturación elaborada, cobrada, pendiente de cobro y estados de cuenta al cliente. <br>
                                     Emite facturas, cuentas de gastos, recibos de honorarios; generando automáticamente el registro de cobranza y estados de cuenta del cliente. <br><br>
                                     Agiliza el proceso de facturación y cobranza; se evita la captura de hasta un 90% de datos al enlazarse con los sistemas de pedimentos CSAAIwin y caja CCAJwin. <br><br>
@@ -259,7 +319,9 @@
                     </div>
                 </div>
             </div>
+            </div>
             <!-- ================================== -->
+            <div id="ccajwin">
             <div id="content">
                 <div class="container">
                     <div class="row">
@@ -273,7 +335,7 @@
                             </div>
                             <div>
                                 <p>
-                                    <img src="images/ccajwin.png" alt="" class="img-left">
+                                    <a href="#content"><img src="images/ccajwin.png" alt="" class="img-left"></a>
                                     Es un sistema orientado al control de las operaciones bancarias efectuadas por el despacho de las mercancías y de los movimientos internos de la empresa. Le permite elaborar y registrar los cargos, abonos, pólizas cheque, recibos de anticipos y cierres de cuentas bancarias. <br><br>
                                     Control de cuentas bancarias por gastos e ingresos de la agencia.
                                     Anticipos del cliente y gastos por el despacho aduanal.
@@ -301,7 +363,9 @@
                     </div>
                 </div>
             </div>
+            </div>
             <!-- ================================== -->
+            <div id="ctarwin">
             <div id="content">
                 <div class="container">
                     <div class="row">
@@ -315,7 +379,7 @@
                             </div>
                             <div>
                                 <p>
-                                    <img src="images/ctarwin.png" alt="" class="img-left">
+                                    <a href="#content"><img src="images/ctarwin.png" alt="" class="img-left"></a>
                                     Es un sistema orientado a la obtención de información oportuna y confiable de la TIGIE, IVA, IEPS, ISAN, preferencias arancelarias, permisos y regulaciones no arancelarias. <br><br>
                                     Permite clasificar arancelariamente las mercancías de forma segura y rápida. Contiene la más completa biblioteca electrónica de leyes, reglamentos, decretos, acuerdos, lineamientos, reglas de carácter general, TLC’s, manuales, tablas, ALADI, NOMs y formatos oficiales con sus respectivos instructivos. <br><br>
                                     <strong>Caracteristicas:</strong><br>
@@ -360,6 +424,7 @@
                 </div>
             </div>
         </article>
+    </div>
     </div>
 
     <footer class="subfooter">
