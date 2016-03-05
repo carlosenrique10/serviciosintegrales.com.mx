@@ -24,7 +24,6 @@
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/rev-setting-1.js"></script>
-
     <script src="js/jquery.js"></script>
   <script src="js/jquery.smooth-scroll.js"></script>
   <script>
@@ -147,7 +146,7 @@
             <!-- ================================== -->
             <div id="contpaqi" class="casa container col-md-4 col-md-pull-4">
                 <div class="content">
-                <a class="col-md-1" href="#csaawin"><img width="15%" src="images/csaaiwin.png" style="width:10%;height:10%;float: rigth;" alt=""></a>
+                <a class="col-md-1" href="#csaawin"><img width="15%" src="images/csaaiwin.png" style="width:10%;height:10%;"alt=""></a>
                 <a class="col-md-1" href="#ctrawin"><img width="15%" src="images/ctrawin.png" style="width:10%;height:10%;" alt=""></a>
                 <a class="col-md-1" href="#cvalwin"><img width="15%" src="images/cvalwin.png" style="width:10%;height:10%;" alt=""></a>
                 <a class="col-md-1" href="#ccgwin"><img width="15%" src="images/ccgwin.png" style="width:10%;height:10%;" alt=""></a>
