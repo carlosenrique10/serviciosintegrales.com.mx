@@ -6,3 +6,14 @@
 @import url("flexslider.css");
 @import url("style.css");
 @import url("switcher.css");
+
+#contpaqi{
+	padding-bottom: 40px;
+	margin: 0 auto; 
+	text-align: center;
+}
+#contpaqi a img{
+	padding-right: 10px;
+	margin: 0 auto; 
+	text-align: center;
+}

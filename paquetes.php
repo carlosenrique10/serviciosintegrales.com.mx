@@ -44,29 +44,29 @@
             <div class="container">
                 <div id="logo">
                     <div class="inner">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="images/logo-siicom.png" alt=""></a>
                     </div>
                 </div>
-
                 <ul id="mainmenu">
-                    <li><a href="index.html" title="Inicio">Inicio</a></li>
-                    <li><a href="empresa.html" title="Empresa">Empresa</a>
+                    <li><a href="index.php" title="Inicio">Inicio</a></li>
+                    <li><a href="paquetes.php" title="Paquetes">Paquetes</a></li>
                         <ul>
-                            <li><a href="contacto.html">Contactanos</a></li>
-                            <li><a href="directorio.html">Directorio</a></li>
+                            <li><a href="contacto.php">Contactanos</a></li>
+                            <li><a href="directorio.php">Directorio</a></li>
                         </ul>
                     </li>
                     <li><a href="#" title="Software">Software</a>
                         <ul>
-                            <li><a href="contpaqi.html">CONTPAQ i</a></li>
-                            <li><a href="casa.html">Sistema CASA</a></li>
+                            <li><a href="contpaqi.php">CONTPAQ i</a></li>
+                            <li><a href="casa.php">Sistema CASA</a></li>
+                            <li><a href="reco.php">Sistemas ROCO</a></li>
                         </ul>
                     </li>
                     <li><a href="#" title="Servicios">Servicios</a>
                         <ul>
                             <li><a href="#">Capacitaciones</a></li>
-                            <li><a href="descargas.html">Descargas</a></li>
+                            <li><a href="descargas.php">Descargas</a></li>
                         </ul>
                     </li>
                     <li><a href="#" title="Productos">Productos</a></li>
@@ -81,7 +81,7 @@
                         <h1>Paquetes</h1>
                         <span>Servicios Integrales en Internet y Cómputo de México</span>
                         <ul class="crumb">
-                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="index.php">Inicio</a></li>
                             <li class="sep">|</li>
                             <li>Paquetes</li>
                         </ul>
@@ -99,7 +99,7 @@
                     </div>
                     
                     <div class="pricing-5-col">
-                    <table class="Table dimension center">
+                    <table id="" class="Table dimension center">
                     <tr>
                         <td>
                         <div class="pricing-box izquierda">
@@ -246,7 +246,7 @@
                     </div>
                     
                     <div class="pricing-5-col center">
-                    <table class="Table dimension center">
+                    <table id="pack" class="Table dimension center">
                     <tr>
                         <td>
                         <div class="pricing-box izquierda">

@@ -35,29 +35,30 @@
             <div class="container">
                 <div id="logo">
                     <div class="inner">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="images/logo-siicom.png" alt=""></a>
                     </div>
                 </div>
 
                 <ul id="mainmenu">
-                    <li><a href="index.html" title="Inicio">Inicio</a></li>
-                    <li><a href="empresa.html" title="Empresa">Empresa</a>
+                    <li><a href="index.php" title="Inicio">Inicio</a></li>
+                    <li><a href="paquetes.php" title="Paquetes">Paquetes</a></li>
                         <ul>
-                            <li><a href="contacto.html">Contactanos</a></li>
-                            <li><a href="directorio.html">Directorio</a></li>
+                            <li><a href="contacto.php">Contactanos</a></li>
+                            <li><a href="directorio.php">Directorio</a></li>
                         </ul>
                     </li>
                     <li><a href="#" title="Software">Software</a>
                         <ul>
-                            <li><a href="contpaqi.html">CONTPAQ i</a></li>
-                            <li><a href="casa.html">Sistema CASA</a></li>
+                            <li><a href="contpaqi.php">CONTPAQ i</a></li>
+                            <li><a href="casa.php">Sistema CASA</a></li>
+                            <li><a href="reco.php">Sistemas ROCO</a></li>
                         </ul>
                     </li>
                     <li><a href="#" title="Servicios">Servicios</a>
                         <ul>
                             <li><a href="#">Capacitaciones</a></li>
-                            <li><a href="descargas.html">Descargas</a></li>
+                            <li><a href="descargas.php">Descargas</a></li>
                         </ul>
                     </li>
                     <li><a href="#" title="Productos">Productos</a></li>
@@ -69,24 +70,25 @@
             <div class="container">
                 <div class="row">
                     <div class="span12">
-                        <h1 style="width: 125px;">Directorio</h1>
+                        <h1>Paquetes</h1>
                         <span>Servicios Integrales en Internet y Cómputo de México</span>
                         <ul class="crumb">
-                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="index.php">Inicio</a></li>
                             <li class="sep">|</li>
-                            <li>Empresa</li>
-                            <li class="sep">|</li>
-                            <li>Directorio</li>
+                            <li>Paquetes</li>
                         </ul>
                     </div>
                 </div>
             </div>
+        </div>        
         </div>
 
         <article class="Article">
             <div id="content">
                 <div class="container">
                     <div class="row">
+                        <div class="span2"></div>
+
                         <div class="span2"></div>
                         <div class="directorio span4">
                             <div class="picframe">
@@ -97,14 +99,6 @@
                             <strong>Cel:</strong><br>(314) 106 3587</div>
                         </div>
 
-                        <div class="directorio span4">
-                            <div class="picframe">
-                            <span style="display:block;text-align:center;"><img src="images/dir1.png" alt="" width="60%" /></span>
-                            </div>
-                            <h5>Angeles Peralta</h5>
-                            <div class="directorio_desc">Administración <br> <strong>Correo:</strong><br> administracion@serviciosintegrales.com.mx <br> <strong>Tel:</strong><br>(314) 138 4257</div>
-                        </div>
-                        <div class="span2"></div>
                     </div>
 
                     <div class="row">
@@ -112,21 +106,8 @@
                             <div class="picframe">
                             <span style="display:block;text-align:center;"><img src="images/dir2.png" alt="" width="60%" /></span>
                             </div>
-                            <h5>Josue Garnica</h5>
-                            <div class="directorio_desc">Soporte Técnico <br> <strong>Correo:</strong><br> josue.garnica@serviciosintegrales.com.mx <br> <strong>Nextel:</strong><br>62*156320*1</div>
-                        </div>
-
-                        <div class="directorio span4">
-                            <div class="picframe">
-                            <span style="display:block;text-align:center;"><img src="images/dir1.png" alt="" width="60%" /></span>
-                            </div>
-<<<<<<< HEAD
-                            <h5>Perla Dávalos</h5>
-                            <div class="directorio_desc">Recepción <br> <strong>Correo:</strong><br> recepcion@serviciosintegrales.com.mx <br> <strong>Tel:</strong><br>314) 138 4257 </div>
-=======
-                            <h5>Perla Peralta</h5>
-                            <div class="directorio_desc">Recepción <br> <strong>Correo:</strong><br> recepcion@serviciosintegrales.com.mx <br> <strong>Tel:</strong><br>(314) 138 4257 </div>
->>>>>>> origin/master
+                            <h5>Aldo Robles</h5>
+                            <div class="directorio_desc">Soporte Técnico <br> <strong>Correo:</strong><br> aldo.robles@serviciosintegrales.com.mx <br> <strong>Nextel:</strong><br>62*156320*1</div>
                         </div>
 
                         <div class="directorio span4">
@@ -134,14 +115,50 @@
                             <span style="display:block;text-align:center;"><img src="images/dir2.png" alt="" width="60%" /></span>
                             </div>
                             <h5>Benito Andrade</h5>
-                            <div class="directorio_desc">Desarrollo <br> <strong>Correo:</strong><br> benito.andrade@serviciosintegrales.com.mx <br> <strong>Nextel:</strong><br>62*156320*2</div>
+                            <div class="directorio_desc">Desarrollo <br> <strong>Correo:</strong><br> benito.andrade@serviciosintegrales.com.mx <br> <strong>Tel:</strong><br>(314) 138 4257 </div>
                         </div>
+
+                        <div class="directorio span4">
+                            <div class="picframe">
+                            <span style="display:block;text-align:center;"><img src="images/dir2.png" alt="" width="60%" /></span>
+                            </div>
+                            <h5>Mario Barragán</h5>
+                            <div class="directorio_desc">Soporte Técnico <br> <strong>Correo:</strong><br> mario.barragan@serviciosintegrales.com.mx <br> <strong>Nextel:</strong><br>62*156320*2</div>
+                        </div>
+                        <div class="directorio span4">
+                            <div class="picframe">
+                            <span style="display:block;text-align:center;"><img src="images/dir2.png" alt="" width="60%" /></span>
+                            </div>
+                            <h5>Ignacio Joya</h5>
+                            <div class="directorio_desc">Soporte Técnico <br> <strong>Correo:</strong><br>.com.mx</div>
+                        </div>
+                        <div class="directorio span4">
+                            <div class="picframe">
+                            <span style="display:block;text-align:center;"><img src="images/dir2.png" alt="" width="60%" /></span>
+                            </div>
+                            <h5>Julio López</h5>
+                            <div class="directorio_desc">Soporte Técnico <br> <strong>Correo:</strong><br>julio.lopez@serviciosintegrales.com.mx</div>
+                        </div>
+                        <div class="directorio span4">
+                            <div class="picframe">
+                            <span style="display:block;text-align:center;"><img src="images/dir1.png" alt="" width="60%" /></span>
+                            </div>
+                            <h5>Isela Robles</h5>
+                            <div class="directorio_desc">Área Administrativa<br><strong>Correo:</strong><br> administracion@serviciosintegrales.com.mx <br> <strong></strong><br></div>
+                        </div>
+                        <div class="span2"></div>
+                        <div class="span2"></div>
+                        <div class="directorio span4">
+                            <div class="picframe">
+                            <span style="display:block;text-align:center;"><img src="images/dir1.png" alt="" width="60%" /></span>
+                            </div>
+                            <h5>Perla Peralta</h5>
+                            <div class="directorio_desc">Soporte Técnico <br> <strong>Correo:</strong><br> recepcion@serviciosintegrales.com.mx <br> <strong>Tel:</strong><br>(314) 138 4257</div>
+                        </div>    
                     </div>
                 </div>
             </div>
         </article>
-    </div>
-
     <footer class="subfooter">
         <div class="container">
             <div class="row">
