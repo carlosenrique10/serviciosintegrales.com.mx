@@ -55,10 +55,7 @@
         return false;
       });
       $('button.scrollhorz').click(function() {
-        $.smoothScroll({
-          direction: 'left',
-          scrollElement: $('div.scrollme'),
-          scrollTarget: '.horiz'
+        
         });
         return false;
       });
@@ -80,7 +77,7 @@
                 </div>
 
                 <ul id="mainmenu">
-                    <li><a onclick="window.location.href='index.php'" style="cursor:pointer;" title="Inicio">Inicio</a></li>
+                    <li><a href="index.php" title="Inicio">Inicio</a></li>
                     <li><a href="paquetes.php" title="Paquetes">Paquetes</a></li>
                         <ul>
                             <li><a href="contacto.php">Contactanos</a></li>
@@ -96,11 +93,11 @@
                     </li>
                     <li><a href="#" title="Servicios">Servicios</a>
                         <ul>
-                            <li><a href="#">Capacitaciones</a></li>
+                            <li><a href="capacitaciones.php">Capacitaciones</a></li>
                             <li><a href="descargas.php">Descargas</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" title="Productos">Productos</a></li>
+                    <li><a href="productos.php" title="Productos">Productos</a></li>
                 </ul>
             </div>
         </header>
