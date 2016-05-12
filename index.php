@@ -5,11 +5,10 @@
     <title>SIICOM-MX | Servicios Integrales en Internet y Cómputo de México</title>
     <link rel="icon" type="image/png" href="images/favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/main.css" type="text/css" id="main-css">
     <link rel="stylesheet" href="css/wide-screen.css" type="text/css" id="wide">
-
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
     <!-- Javascript Files -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -78,7 +77,7 @@
             <div class="container">
                 <div class="row">
                     <div class="span12">
-                        <h1>Paquetes</h1>
+                        <h1><a href="https://www.facebook.com/pages/Servicios-Integrales-En-Internet-Y-Computo-De-M%C3%A9xico/101090743293750?fref=ts" original-title="Obten 100MB en Tamaño de Disco, 1 Base de Datos y 1 Cuenta de Correo solamente dando like a la pagina de Facebook de SIICOM-MX." class="tooltip" target="_blank"><img src="https://lh3.googleusercontent.com/-H8xMuAxM-bE/UefWwJr2vwI/AAAAAAAAEdY/N5I41q19KMk/s32-no/facebook.png"></a></h1>
                         <span>Servicios Integrales en Internet y Cómputo de México</span>
                         <ul class="crumb">
                             <li><a href="index.php">Inicio</a></li>
