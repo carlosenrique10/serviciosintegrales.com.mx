@@ -380,13 +380,10 @@
                     <p class="Paq_Free" label="free">Obten <strong>100MB en Tamaño de Disco, 1 Base de Datos y 1 Cuenta de Correo</strong> solamente dando like a la pagina de Facebook de SIICOM-MX.</p>
 
                     <div class="fb-like" data-href="https://www.facebook.com/pages/Servicios-Integrales-En-Internet-Y-Computo-De-M%C3%A9xico/101090743293750?fref=ts" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
-
                 </div>
             </div>
         </article>
-        
         </div>
-        
         <footer class="subfooter">
             <div class="container">
                 <div class="row">
