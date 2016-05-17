@@ -5,7 +5,9 @@
 @import url("prettyPhoto.css");
 @import url("flexslider.css");
 @import url("style.css");
+@import url("styles.css");
 @import url("switcher.css");
+
 
 #contpaqi{
 	padding-bottom: 40px;
@@ -23,7 +25,7 @@
     opacity: .95;
    -moz-opacity: .95;
    filter:alpha(opacity=95);
-
+   /*Tooltip config*/
   }
   .tooltip:hover:after {
       top: 32px; /*cuadrado debajo*/   

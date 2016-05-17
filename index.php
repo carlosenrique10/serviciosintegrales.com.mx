@@ -2,13 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>SIICOM-MX | Servicios Integrales en Internet y Cómputo de México</title>
+    <title>Paquetes | Servicios Integrales en Internet y Cómputo de México</title>
     <link rel="icon" type="image/png" href="images/favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/main.css" type="text/css" id="main-css">
     <link rel="stylesheet" href="css/wide-screen.css" type="text/css" id="wide">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
+    <!--modals%scripts-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <!-- Javascript Files -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -47,7 +49,6 @@
                             <img src="images/logo-siicom.png" alt=""></a>
                     </div>
                 </div>
-
                 <ul id="mainmenu">
                     <li><a href="index.php" title="Inicio">Inicio</a></li>
                     <li><a href="paquetes.php" title="Paquetes">Paquetes</a></li>
@@ -73,6 +74,7 @@
                 </ul>
             </div>
         </header>
+
         <div id="subheader">
             <div class="container">
                 <div class="row">
@@ -84,11 +86,37 @@
                             <li><a href="index.php">Inicio</a></li>
                             <li class="sep">|</li>
                             <li>Paquetes</li>
+                            <li class="sep">|</li>
+                            <li><button type="button" class="button special"  data-toggle="modal" data-target="#myModal">Entrar</button></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
+        <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="login-page">
+  <div class="form1">
+    <form class="register-form">
+      <input type="text" placeholder="Nombre" required />
+      <input type="text" placeholder="Nombre de usuario" required />
+      <input type="password" placeholder="Contraseña" required />
+      <input type="email" placeholder="E-mail" required />
+      <button>crear cuenta</button>
+      <p class="message">Ya estas registrado? <a href="#">Entra</a></p>
+    </form>
+    <form class="login-form">
+      <input type="text" placeholder="Nombre de usuario" required/>
+      <input type="password" placeholder="Contraseña" required/>
+      <button>Iniciar</button>
+      <p class="message">No estas registrado? <a href="#">Crea una cuenta</a></p>
+    </form>
+  </div>
+</div>
+      
+    </div>
+  </div>       
         </div>
         <hr>
         <div class="container">
@@ -185,6 +213,11 @@
     
     <script type="text/javascript">
         document.oncontextmenu = function(){return false;}
+    </script>
+    <script>
+        $('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
     </script>
 </body>
 </html>
