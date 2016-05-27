@@ -43,8 +43,18 @@
 }
 </style>
 </head>
-
 <body style="background: black;">
+    <!-- Boton Like -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=1482683755341621&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div id="wrapper">
+
         <header>
             <div class="container">
                 <div id="logo">
@@ -53,7 +63,6 @@
                             <img src="images/logo-siicom.png" alt=""></a>
                     </div>
                 </div>
-
                 <ul id="mainmenu">
                     <li><a href="index.php" title="Inicio">Inicio</a></li>
                     <li><a href="paquetes.php" title="Paquetes">Paquetes</a></li>
@@ -79,6 +88,7 @@
                 </ul>
             </div>
         </header>
+
         <div id="subheader">
             <div class="container">
                 <div class="row">
@@ -90,9 +100,8 @@
                             <li><a href="index.php">Inicio</a></li>
                             <li class="sep">|</li>
                             <li>Paquetes</li>
-                             <li class="sep">|</li>
+                            <li class="sep">|</li>
                             <li><button type="button" class="button special"  data-toggle="modal" data-target="#myModal">Entrar</button></li>
-
                         </ul>
                     </div>
                 </div>
@@ -121,7 +130,7 @@
 </div>
       
     </div>
-  </div>
+  </div>  
     <div style="display:block;text-align:center;" ><img src="images/construccion.jpg" alt=""/></div>
     <script>
         $('.message a').click(function(){

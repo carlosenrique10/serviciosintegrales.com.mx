@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Inicio| Servicios Integrales en Internet y Cómputo de México</title>
+    <title>Sistemas RECO | Servicios Integrales en Internet y Cómputo de México</title>
     <link rel="icon" type="image/png" href="images/favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -90,9 +90,8 @@
                             <li><a href="index.php">Inicio</a></li>
                             <li class="sep">|</li>
                             <li>Paquetes</li>
-                             <li class="sep">|</li>
+                            <li class="sep">|</li>
                             <li><button type="button" class="button special"  data-toggle="modal" data-target="#myModal">Entrar</button></li>
-
                         </ul>
                     </div>
                 </div>

@@ -9,7 +9,8 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/main.css" type="text/css" id="main-css">
     <link rel="stylesheet" href="css/wide-screen.css" type="text/css" id="wide">
-
+    <!--modals%scripts-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <!-- Javascript Files -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -26,6 +27,14 @@
     <script src="js/rev-setting-1.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+    <script>
+    var $jq = jQuery.noConflict();
+        $(function(){
+        $jq('#mainmenu').slicknav();
+    });
+
+    </script>
       <script>
     $(document).ready(function() {
 
@@ -55,62 +64,56 @@
         return false;
       });
       $('button.scrollhorz').click(function() {
-        $.smoothScroll({
-          direction: 'left',
-          scrollElement: $('div.scrollme'),
-          scrollTarget: '.horiz'
+        
         });
         return false;
       });
-
-    });
 
   </script>
     
 </head>
 <body>
     <div id="wrapper">
-
         <header>
             <div class="container">
                 <div id="logo">
                     <div class="inner">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="images/logo-siicom.png" alt=""></a>
                     </div>
                 </div>
 
                 <ul id="mainmenu">
-                    <li><a href="index.html" title="Inicio">Inicio</a></li>
-                    <li><a href="paquetes.html" title="paquetes">Paquetes</a>
+                    <li><a href="index.php" title="Inicio">Inicio</a></li>
+                    <li><a href="paquetes.php" title="Paquetes">Paquetes</a></li>
                         <ul>
-                            <li><a href="contacto.html">Contactanos</a></li>
-                            <li><a href="directorio.html">Directorio</a></li>
+                            <li><a href="contacto.php">Contactanos</a></li>
+                            <li><a href="directorio.php">Directorio</a></li>
                         </ul>
                     </li>
                     <li><a href="#" title="Software">Software</a>
                         <ul>
-                            <li><a href="contpaqi.html">CONTPAQ i</a></li>
-                            <li><a href="casa.html">Sistema CASA</a></li>
-                            <li><a href="reco.html">Sistemas ROCO</a></li>
+                            <li><a href="contpaqi.php">CONTPAQ i</a></li>
+                            <li><a href="casa.php">Sistema CASA</a></li>
+                            <li><a href="reco.php">Sistemas RECO</a></li>
                         </ul>
                     </li>
                     <li><a href="#" title="Servicios">Servicios</a>
                         <ul>
-                            <li><a href="#">Capacitaciones</a></li>
-                            <li><a href="descargas.html">Descargas</a></li>
+                            <li><a href="capacitaciones.php">Capacitaciones</a></li>
+                            <li><a href="descargas.php">Descargas</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" title="Productos">Productos</a></li>
+                    <li><a href="productos.php" title="Productos">Productos</a></li>
                 </ul>
             </div>
         </header>
-
         <div id="subheader">
             <div class="container">
                 <div class="row">
                     <div class="span12">
-                        <h1 style="width: 125px;">CONTPAQ i</h1>
+                        <h1><a href="http://www.twitter.com/home?status=" original-title="Obten 100MB en Tamaño de Disco, 1 Base de Datos y 1 Cuenta de Correo solamente siguiendonos en la pagina de twitter de SIICOM-MX." class="tooltip" target="_blank"><img src="https://lh5.googleusercontent.com/-xZVxH6CsUaQ/UefWwgi8o3I/AAAAAAAAEdk/reo5XS6z8-8/s32-no/twitter.png"></a>
+                        <a href="https://www.facebook.com/pages/Servicios-Integrales-En-Internet-Y-Computo-De-M%C3%A9xico/101090743293750?fref=ts" original-title="Obten 100MB en Tamaño de Disco, 1 Base de Datos y 1 Cuenta de Correo solamente dando like a la pagina de Facebook de SIICOM-MX." class="tooltip" target="_blank"><img src="https://lh3.googleusercontent.com/-H8xMuAxM-bE/UefWwJr2vwI/AAAAAAAAEdY/N5I41q19KMk/s32-no/facebook.png"></a></h1>
                         <span>Servicios Integrales en Internet y Cómputo de México</span>
                         <ul class="crumb">
                             <li><a href="index.html">Inicio</a></li>
@@ -118,12 +121,37 @@
                             <li>Software</li>
                             <li class="sep">|</li>
                             <li>CONTPAQ i</li>
+                            <li class="sep">|</li>
+                            <li><button type="button" class="button special"  data-toggle="modal" data-target="#myModal">Entrar</button></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-
+        <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="login-page">
+  <div class="form1">
+    <form class="register-form">
+      <input type="text" placeholder="Nombre" required />
+      <input type="text" placeholder="Nombre de usuario" required />
+      <input type="password" placeholder="Contraseña" required />
+      <input type="email" placeholder="E-mail" required />
+      <button>crear cuenta</button>
+      <p class="message">Ya estas registrado? <a href="#">Entra</a></p>
+    </form>
+    <form class="login-form">
+      <input type="text" placeholder="Nombre de usuario" required/>
+      <input type="password" placeholder="Contraseña" required/>
+      <button>Iniciar</button>
+      <p class="message">No estas registrado? <a href="#">Crea una cuenta</a></p>
+    </form>
+  </div>
+</div>
+      
+    </div>
+  </div> 
         <article class="Article">
             <div id="content">
                 <div class="container">
@@ -386,6 +414,11 @@
 
     <script type="text/javascript">
         document.oncontextmenu = function(){return false;}
+    </script>
+    <script>
+        $('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
     </script>
 </body>
 </html>
