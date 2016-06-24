@@ -8,7 +8,7 @@
 @import url("styles.css");
 @import url("switcher.css");
 @import url("slicknav.css");
-
+@import url("fileinput.min.css");
 #contpaqi{
 	padding-bottom: 40px;
 	margin: 0 auto; 
@@ -54,4 +54,7 @@
     border-color: gray transparent;
     border-width: 0 6px 6px 6px; /*Triangulo sentido arriba*/
 
+  }
+  #xxx {
+    margin-top: 20px;
   }

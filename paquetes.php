@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="utf-8">
@@ -31,7 +31,7 @@
         $(function(){
         $jq('#mainmenu').slicknav();
     });
-
+        
     </script>
 </head>
 
@@ -130,7 +130,11 @@
                         <h1>Paquetes Personales</h1>
                         Servicios Integrales en Internet y Cómputo de México
                     </div>
-                    
+                    <script>
+                        $("#al").click(function(){
+                            alert("Debes iniciar sesion para poder adquirir el producto");
+                            });
+                    </script>
                     <div class="pricing-5-col">
                     <table id="" class="Table dimension center">
                     <tr>
@@ -171,7 +175,7 @@
                                 <li><img src="images/yes.png" alt=""></li>
                                 <li class="deco"><img src="images/no.png" alt=""></li>
                                 <li>$ 100 / Anuales</li>
-                                <li class="deco"><a href="" class="btn btn-primary">Ordenar</a></li>
+                                <li class="deco"><a id="al" href="" class="btn btn-primary">Ordenar</a></li>
                             </ul>
                         </div>
                         </td>
@@ -192,7 +196,7 @@
                                 <li><img src="images/yes.png" alt=""></li>
                                 <li class="deco"><img src="images/no.png" alt=""></li>
                                 <li>$ 300 / Anuales</li>
-                                <li class="deco"><a href="" class="btn btn-primary">Ordenar</a></li>
+                                <li class="deco"><a id="al" href="" class="btn btn-primary">Ordenar</a></li>
                             </ul>
                         </div>
                         </td>
@@ -213,7 +217,7 @@
                                 <li><img src="images/yes.png" alt=""></li>
                                 <li class="deco"><img src="images/yes.png" alt=""></li>
                                 <li>$ 500 / Anuales</li>
-                                <li class="deco"><a href="" class="btn btn-primary">Ordenar</a></li>
+                                <li class="deco"><a id="al" href="" class="btn btn-primary">Ordenar</a></li>
                             </ul>
                         </div>
                         </td>
@@ -234,7 +238,7 @@
                                 <li><img src="images/yes.png" alt=""></li>
                                 <li class="deco"><img src="images/yes.png" alt=""></li>
                                 <li>$ 700 / Anuales</li>
-                                <li class="deco"><a href="" class="btn btn-primary">Ordenar</a></li>
+                                <li class="deco"><a id="al" href="" class="btn btn-primary">Ordenar</a></li>
                             </ul>
                         </div>
                         </td>
@@ -255,7 +259,7 @@
                                 <li><img src="images/yes.png" alt=""></li>
                                 <li class="deco"><img src="images/yes.png" alt=""></li>
                                 <li>$ 1000 / Anuales</li>
-                                <li class="deco"><a href="" class="btn btn-primary">Ordenar</a></li>
+                                <li class="deco"><a id="al" href="" class="btn btn-primary">Ordenar</a></li>
                             </ul>
                         </td>
 
@@ -322,7 +326,7 @@
                                 <li><img src="images/yes.png" alt=""></li>
                                 <li class="deco"><img src="images/yes.png" alt=""></li>
                                 <li>$ 100 / Mensuales</li>
-                                <li class="deco"><a href="" class="btn btn-primary">Ordenar</a></li>
+                                <li class="deco"><a id="al" href="" class="btn btn-primary">Ordenar</a></li>
                             </ul>
                         </div>
                         </td>
@@ -345,7 +349,7 @@
                                 <li><img src="images/yes.png" alt=""></li>
                                 <li class="deco"><img src="images/yes.png" alt=""></li>
                                 <li>$ 150 / Mensuales</li>
-                                <li class="deco"><a href="" class="btn btn-primary">Ordenar</a></li>
+                                <li class="deco"><a id="al" href="" class="btn btn-primary">Ordenar</a></li>
                             </ul>
                         </div>
                         </td>
@@ -368,7 +372,7 @@
                                 <li><img src="images/yes.png" alt=""></li>
                                 <li class="deco"><img src="images/yes.png" alt=""></li>
                                 <li>$ 200 / Mensuales</li>
-                                <li class="deco"><a href="" class="btn btn-primary">Ordenar</a></li>
+                                <li class="deco"><a id="al" href="" class="btn btn-primary">Ordenar</a></li>
                             </ul>
                         </div>
                         </td>
@@ -391,7 +395,7 @@
                                 <li><img src="images/yes.png" alt=""></li>
                                 <li class="deco"><img src="images/yes.png" alt=""></li>
                                 <li>$ 250 / Mensuales</li>
-                                <li class="deco"><a href="" class="btn btn-primary">Ordenar</a></li>
+                                <li class="deco"><a id="al" href="" class="btn btn-primary">Ordenar</a></li>
                             </ul>
                         </div>
                         </td>

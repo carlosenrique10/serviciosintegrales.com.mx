@@ -93,13 +93,7 @@
                             <li class="sep">|</li>
                             <li>Paquetes</li>
                             <li class="sep">|</li>
-                            <?php if(!isset($_SESSION["user_id"])):?>
                             <li><button type="button" class="button special"  data-toggle="modal" data-target="#myModal">Entrar</button></li>
-                            <?php else:?>
-                            <li> <a href="newpost.php" type="button">Crear</a></li>
-                            <li> <a href="logout.php" type="button">Salir</a></li>
-                            <?php endif;?>
-
                         </ul>
                     </div>
                 </div>
@@ -135,88 +129,50 @@
     </div>
   </div>       
         </div>
-        <hr>
-        <div class="container">
-            <div class="row">
-                <div id="logo">
-                    <img src="images/logo-siicom.png" alt="" style="margin: 0 auto; float:right;">
-                </div>
-            </div>
-        </div>     
-         <article class="Article">
-            <div id="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="de_divider none"><span></span></div>
-                        <div class="span1"></div>
-                        <div class="span10">
-                            <h4 class="title Table">¿QUIENES SOMOS?</h4>
-                            <div>
-                                <p>
-                                    <img src="images/quienes-somos.png" alt="" class="img-left" width="25%">
-                                    SIICOM-MX es una empresa de profesionales dedicados a proporcionar consultaría en tecnologías de información y telecomunicaciones, ofreciendo soluciones integrales basados en las nuevas tendencias tecnológicas.
-                                    <br><br>
-                                    SIICOM-MX inicio operaciones en el año 2000 logrando la permanencia a la respuesta satisfactoria de los clientes con los que hemos trabajado.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="span1"></div>
-                    </div>
-                </div>
-            </div>
+        
 
-            <div id="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="de_divider none"><span></span></div>
-                        <div class="span1"></div>
-                        <div class="span10">
-                            <h4 class="title Table">MISIÓN Y VISIÓN</h4>
-                            <div>
-                                <p>
-                                    <img src="images/mision-vision.png" alt="" class="img-right" width="25%">
-                                    En SIICOM-MX estamos comprometidos en crear, desarrollar, integrar, compartir y aplicar el conocimiento de las tecnologías de información y telecomunicaciones en todos los sectores empresariales e industriales del país.
-                                    <br><br>
-                                    Ser una empresa líder y rentable, reconocida por proveer soluciones sustentables dentro de un marco tecnológico de vanguardia.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="span1"></div>
-                    </div>
-                </div>
-            </div>
+<html>
+    <head>
+        <title>Formulario de Registro</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+        <h2>Registro</h2>
 
-            <div id="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="de_divider none"><span></span></div>
-                        <div class="span2"></div>
-                        <div class="span8">
-                            <h4 class="title Table">VALORES Y ACTITUDES</h4>
-                            <div>
-                                <p>
-                                    <img src="images/valores.png" alt="" class="img-right" width="25%">
-                                    <ul style="margin-left: 50px;">
-                                        <li>Integridad</li>
-                                        <li>Compromiso</li>
-                                        <li>Responsabilidad</li>
-                                        <li>Respeto</li>
-                                        <li>Creatividad</li>
-                                        <li>Ética Profesional</li>
-                                        <li>Responsabilidad Social</li>
-                                        <li>Espíritu de Trabajo</li>
-                                        <li>Espíritu de Servicio</li>
-                                        <li>Lealtad y Confidencialidad</li>
-                                        <li>Fomento de la Innovación</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="span2"></div>
-                    </div>
-                </div>
-            </div>
-        </article> 
+        <form role="form" name="registro" action="registro.php" method="post">
+          <div class="form-group">
+            <label for="username">Nombre de usuario</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Nombre de usuario">
+          </div>
+          <div class="form-group">
+            <label for="fullname">Nombre Completo</label>
+            <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Nombre Completo">
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electronico</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Correo Electronico">
+          </div>
+          <div class="form-group">
+            <label for="password">Contrase&ntilde;a</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Contrase&ntilde;a">
+          </div>
+          <div class="form-group">
+            <label for="confirm_password">Confirmar Contrase&ntilde;a</label>
+            <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirmar Contrase&ntilde;a">
+          </div>
+
+          <button type="submit" class="btn btn-default">Registrar</button>
+        </form>
+        </div>
+        </div>
+        </div>
+
+        <script src="js/valida_registro.js"></script>
+    </body>
+</html>
         <footer class="subfooter">
             <div class="container">
                 <div class="row">

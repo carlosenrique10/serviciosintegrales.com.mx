@@ -6,7 +6,7 @@
         var message  = $("#message").val();
 
         var error = false;
-		
+		    
 		 if(name.length == 0) {
 		    var error = true;
 		    $("#error_name").fadeIn(500);
@@ -46,5 +46,6 @@
            });  
         }
 		    return false;                      
-      });    
+      });  
+        
     });

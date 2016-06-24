@@ -27,6 +27,7 @@
     <script src="js/custom.js"></script>
     <script src="js/rev-setting-1.js"></script>
     <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript" src="js/fileinput.min.js"></script>
     <script>
     var $jq = jQuery.noConflict();
         $(function(){
@@ -93,13 +94,7 @@
                             <li class="sep">|</li>
                             <li>Paquetes</li>
                             <li class="sep">|</li>
-                            <?php if(!isset($_SESSION["user_id"])):?>
                             <li><button type="button" class="button special"  data-toggle="modal" data-target="#myModal">Entrar</button></li>
-                            <?php else:?>
-                            <li> <a href="newpost.php" type="button">Crear</a></li>
-                            <li> <a href="logout.php" type="button">Salir</a></li>
-                            <?php endif;?>
-
                         </ul>
                     </div>
                 </div>
@@ -135,88 +130,40 @@
     </div>
   </div>       
         </div>
-        <hr>
-        <div class="container">
-            <div class="row">
-                <div id="logo">
-                    <img src="images/logo-siicom.png" alt="" style="margin: 0 auto; float:right;">
-                </div>
-            </div>
-        </div>     
-         <article class="Article">
-            <div id="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="de_divider none"><span></span></div>
-                        <div class="span1"></div>
-                        <div class="span10">
-                            <h4 class="title Table">¿QUIENES SOMOS?</h4>
-                            <div>
-                                <p>
-                                    <img src="images/quienes-somos.png" alt="" class="img-left" width="25%">
-                                    SIICOM-MX es una empresa de profesionales dedicados a proporcionar consultaría en tecnologías de información y telecomunicaciones, ofreciendo soluciones integrales basados en las nuevas tendencias tecnológicas.
-                                    <br><br>
-                                    SIICOM-MX inicio operaciones en el año 2000 logrando la permanencia a la respuesta satisfactoria de los clientes con los que hemos trabajado.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="span1"></div>
-                    </div>
-                </div>
-            </div>
+<html>
+    <body>
+    <!-- contenido new post-->
+      <div class="container">
+<div class="row">
+<div class="col-md-6">
+        <h2>Nuevo post</h2>
 
-            <div id="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="de_divider none"><span></span></div>
-                        <div class="span1"></div>
-                        <div class="span10">
-                            <h4 class="title Table">MISIÓN Y VISIÓN</h4>
-                            <div>
-                                <p>
-                                    <img src="images/mision-vision.png" alt="" class="img-right" width="25%">
-                                    En SIICOM-MX estamos comprometidos en crear, desarrollar, integrar, compartir y aplicar el conocimiento de las tecnologías de información y telecomunicaciones en todos los sectores empresariales e industriales del país.
-                                    <br><br>
-                                    Ser una empresa líder y rentable, reconocida por proveer soluciones sustentables dentro de un marco tecnológico de vanguardia.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="span1"></div>
-                    </div>
-                </div>
-            </div>
+        <form role="form" name="registro" action="publicar.php" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="username">Titulo del post:</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Titulo">
+          </div>
+          <div class="form-group">
+            <label for="fullname">Descripcion:</label>
+            
+            <textarea rows="4" cols="50" class="form-control" id="fullname" name="fullname" placeholder="Que fue lo que se realizo">
+ 
+            </textarea>
+          </div>
+          <label for="email">Agregar fotos:</label>
+          <div class="form-group">
+            <input id="file-3" type="file" multiple=true class="btn btn-primary" >
+          000000000000</div> 
 
-            <div id="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="de_divider none"><span></span></div>
-                        <div class="span2"></div>
-                        <div class="span8">
-                            <h4 class="title Table">VALORES Y ACTITUDES</h4>
-                            <div>
-                                <p>
-                                    <img src="images/valores.png" alt="" class="img-right" width="25%">
-                                    <ul style="margin-left: 50px;">
-                                        <li>Integridad</li>
-                                        <li>Compromiso</li>
-                                        <li>Responsabilidad</li>
-                                        <li>Respeto</li>
-                                        <li>Creatividad</li>
-                                        <li>Ética Profesional</li>
-                                        <li>Responsabilidad Social</li>
-                                        <li>Espíritu de Trabajo</li>
-                                        <li>Espíritu de Servicio</li>
-                                        <li>Lealtad y Confidencialidad</li>
-                                        <li>Fomento de la Innovación</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="span2"></div>
-                    </div>
-                </div>
-            </div>
-        </article> 
+         <button id="xxx" type="submit" class="btn btn-default">P
+         ublicar</button>
+        </form>
+        </div>
+        </div>
+        </div>
+        <!-- contenido new post-->
+    </body>
+</html>
         <footer class="subfooter">
             <div class="container">
                 <div class="row">
@@ -227,9 +174,18 @@
             </div>
         </footer>
     </div>
-    <script src="js/valida_registro.js"></script>
     <script type="text/javascript">
         document.oncontextmenu = function(){return false;}
+
+         var $jq = jQuery.noConflict();
+           $jq("#file-3").fileinput({
+    showUpload: false,
+    showCaption: false,
+    browseClass: "btn btn-primary btn-lg",
+    fileType: "any",
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
+  });
+        
     </script>
     <script>
         $('.message a').click(function(){
